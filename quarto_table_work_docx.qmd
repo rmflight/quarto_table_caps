@@ -1,0 +1,26 @@
+---
+title: "test table captions"
+format: docx
+---
+
+Let's borrow a table from `mtcars`.
+
+```{r}
+#| label: load_data
+data(mtcars)
+```
+
+@tbl-mtcars shows the mtcars data using `gt`.
+
+```{r}
+#| echo: false
+mtcars |>
+  head() |>
+  gt::gt()
+```
+
+```{r}
+#| label: sessionInfo
+sessionInfo()
+quarto::quarto_version()
+```
